@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Title</title>
 </head>
 <body>
-$END$
+  <div id="app"></div>
+
+  <script type="module">
+    import myReact from '../packages/index.js'
+
+    const app = myReact.createElement('h1', {class: 'h1'}, 'my-react')
+
+    myReact.render(app,  document.getElementById('app'))
+  </script>
 </body>
 </html>
